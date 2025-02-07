@@ -60,3 +60,68 @@ button:active{
 .Obtn:active{
     background-color: hsl(39, 100%, 70%);
 }
+@media screen and (max-width: 600px) {
+
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100vh;
+
+
+}
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: black;
+    border-radius: 3px;
+    border: 1px solid rgba(192, 192, 192, 0.603);
+    max-width:300px ;
+    overflow: hidden;
+}
+#display{
+    width: 100%;
+    background-color: rgba(192, 192, 192, 0.603);
+    border: none;
+   text-align: left;
+    padding:5px;
+    font-size: 2rem;
+    color: white;
+
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,0.5fr);
+    gap: 5px;
+    padding: 20px;
+
+}
+button{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgba(192, 192, 192, 0.603);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(213, 213, 213, 0.753);
+}
+button:active{
+    background-color: rgba(228, 226, 226, 0.977);
+}
+.Obtn{
+    background-color: orange;
+}
+.Obtn:hover{
+    background-color: hsl(39, 100%, 60%);
+}
+.Obtn:active{
+    background-color: hsl(39, 100%, 70%);
+}
+   
+  }
